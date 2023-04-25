@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript APIs</title>
+    <link rel="stylesheet" href="./exercise.css" />
   </head>
   <body>
     <main
@@ -16,23 +17,21 @@
     >
       <div>
         <h1>JavaScript APIs</h1>
-        <p>
-          Open the Browser Console to view your work (Right-Click => Inspect or
-          fn+F12)
-        </p>
+        <p id="feedback"></p>
         <div id="inputContainer">
           <label for="searchWord">Giphy Search:</label>
           <input style="margin: 2rem" type="text" id="searchWord" />
           <button id="submitSearch">Giphy by Search</button>
         </div>
 
-        <div id="imageContainer" style="max-width: 680px">
-          <img
-            src="#"
-            alt="Giphy Selection"
-            style="width: 100%; height: auto"
-          />
+        <div id="imageContainer" class="hidden">
+        <div class="gifOptions">
+          <button id="saveBtn">Save for Later</button>
         </div>
+          <img
+            src="" alt="" class="img-fluid" />
+        </div>
+        <div id="savedGifs"></div>
       </div>
     </main>
 
